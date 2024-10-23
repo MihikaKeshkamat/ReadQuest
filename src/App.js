@@ -48,7 +48,7 @@ const App = () => {
             <div>
               <Shop handleClick={handleClick} />
               
-              <Card cart={cart} />
+              <Card cart={cart} setCart={setCart}/>
             </div>
           }
           />
