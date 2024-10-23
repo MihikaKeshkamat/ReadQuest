@@ -28,7 +28,7 @@ const App = () => {
     }
 
     setCart([...cart,{...item,amount:1}]);
-    alert("Item added to Cart!");
+    // alert("Item added to Cart!");
   };
   return (
     <div>
@@ -48,11 +48,11 @@ const App = () => {
             <div>
               <Shop handleClick={handleClick} />
               
-              <Card cart={cart} setCart={setCart}/>
+              <Card cart={cart} />
             </div>
           }
           />
-          <Route path="/cart" element={<Cart cart={cart} setCart={cart}/>}/>
+          <Route path="/cart" element={<Cart cart={cart} setCart={setCart}/>}/>
           <Route path="/SignUp" element={<SignUp />}></Route>
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

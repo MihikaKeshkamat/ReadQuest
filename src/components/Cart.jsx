@@ -13,7 +13,7 @@ const Cart = ({ cart, setCart }) => {
     if (cart.length === 0) return <p>Your cart is empty.</p>;
 
     const removeFromCart = (id) => {
-        const updatedCart = (cart.filter((item) => item.id !== id));
+        const updatedCart = cart.filter((item) => item.id !== id);
         setCart(updatedCart);
     };
 
@@ -22,6 +22,7 @@ const Cart = ({ cart, setCart }) => {
             item.id === id ? { ...item, amount: item.amount + 1 } : item
         );
         setCart(updatedCart);
+        
     };
 
     const decrementAmount = (id) => {
