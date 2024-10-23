@@ -1,0 +1,11 @@
+.warning{
+    height:40px;
+    font-weight: bold;
+    background-color: rgb(145, 146, 149);
+    position: absolute;
+    right: 650px;
+    /* margin-top: 10px; */
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+    top:10%;
+}

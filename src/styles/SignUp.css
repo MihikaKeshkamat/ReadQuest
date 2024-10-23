@@ -1,0 +1,81 @@
+/* SignUp.css */
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Center vertically on the viewport */
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional background color */
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%; /* Take full width */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Optional bold label */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Optional rounded corners for input */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Primary color */
+    color: white;
+    border: none;
+    border-radius: 4px; /* Optional rounded corners */
+    cursor: pointer;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 20px;
+    width: 400px; /* Ensure full width for the toggle buttons */
+}
+
+.toggle-container button {
+    flex: 1; /* Allow buttons to take equal space */
+    padding: 10px;
+    background-color: transparent; /* Transparent background */
+    border: 1px solid #007bff; /* Same border color as the submit button */
+    color: #007bff; /* Text color matching the primary color */
+    cursor: pointer;
+    margin: 0 5px; /* Space between buttons */
+    border-radius: 4px; /* Optional rounded corners */
+}
+
+.toggle-container button.active {
+    background-color: #007bff; /* Background for active button */
+    color: white; /* Text color for active button */
+    border: none; /* Remove border for active button */
+}
+
+.toggle-container button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    color: white; /* Text color on hover */
+}
